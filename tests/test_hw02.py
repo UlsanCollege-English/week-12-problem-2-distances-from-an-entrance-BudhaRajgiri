@@ -1,6 +1,8 @@
 import pytest
+import sys, os
+# Add parent folder to sys.path so Python can see main.py
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from main import bfs_distances
-
 
 # Normal tests (4)
 
